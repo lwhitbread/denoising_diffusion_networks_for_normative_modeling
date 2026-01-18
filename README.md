@@ -90,16 +90,6 @@ python full_eval_normative_suite.py --config config.yaml \
   --mlp_epochs 1500
 ```
 
-#### Reproducing the paper run group (`124_all_both`)
-
-The paper results directory in the original project corresponds to `run_group=124_all_both`. Assuming you have placed the required CSVs at the paths referenced by your `config.yaml`, you can reproduce the same directory layout via:
-
-```bash
-python full_eval_normative_suite.py --config config.yaml --run_group 124_all_both
-```
-
-Tip: if you already have checkpoints in that output folder and just want to re-run evaluation without retraining, use `--skip_if_exists`.
-
 #### Where outputs are written (`--results_dir`)
 
 This release keeps the historical output layout used during development on RAP:
@@ -143,9 +133,3 @@ After installing dependencies, you can verify imports with:
 ```bash
 python test_imports.py
 ```
-
-### Citation
-
-If you use this code, please cite the associated paper:
-
-> (Add citation here.)
